@@ -38,6 +38,8 @@ function App() {
 }
 ```
 
+See example for complete usage
+
 ## Pros and cons
 
 ### Pros
