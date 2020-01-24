@@ -1,6 +1,13 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
 
-ReactDOM.render(<App />, document.getElementById('root'));
-
+/**
+ *
+ * @param View is the view part of the component. It shouldn't contain any logic. Just rendering treatment
+ * @param functions is an object containing all the functions inside the controller
+ * @returns {function(*): React.ReactElement} Functional component which returns the View with functions and props injected
+ */
+export default function index(View, functions) {
+  return function (props) {
+    return <View {...functions} {...props}/>
+  }
+}
