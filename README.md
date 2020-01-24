@@ -1,68 +1,31 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React Functional Programming
 
-## Available Scripts
+React functional programming is a way to architecture React applications by splitting the logic and the view and also by pushing the developers to do functional programming in react applications.
 
-In the project directory, you can run:
+## Description and concept
 
-### `npm start`
+React applications tend to mix the **View** and **Controller** in the same file <br/>
+The problem is that it makes big files and the render logic is mixed into any other logic. <br/>
+<br/>
+This small library force developers to make pure functions as they cannot access to the props/state directly. <br/>
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Why injecting functions as props instead of using them directly in a component ?
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Good question! <br/>
+It makes the code clearer as a function is assigned to a component instead of just using it a reference.
+For people who use typing, the prototype can be set in the props type and you finish with 2 components which as been merged. The first one is  the logic component (functions) and the second one is the view component
 
-### `npm test`
+## Pros and cons
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Pros
 
-### `npm run build`
+- Easier to test and write Unit tests on the pure functions
+- Reduce side effects by using functional programming guidelines
+- More clarity into the files
+- Reusability of pure functions in others components
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Cons
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- 3 files for 1 component
+- Strong understanding of functional programming
+- May change the way developers implement react

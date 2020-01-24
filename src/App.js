@@ -3,7 +3,7 @@ import CounterPage from './components/counter-page'
 function App() {
   return (
     <div>
-      <CounterPage/>
+      <CounterPage appName="React Functional Architecture Example"/>
     </div>
   );
 }

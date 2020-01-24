@@ -1,5 +1,5 @@
 import GenerateComponent from '../../GenerateComponent';
 import View from './View';
-import { showHelloWorld } from './Controller';
+import { calculateNewValue } from './Controller';
 
-export default GenerateComponent(View, {showHelloWorld})
+export default GenerateComponent(View, {calculateNewValue})
