@@ -1,4 +1,4 @@
-import GenerateComponent from 'rfp';
+import GenerateComponent from 'react-functional-programming';
 import View from './View';
 import {calculateNewValue} from './Controller';
 
