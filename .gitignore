@@ -22,3 +22,6 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .idea/
+dist/
+example/build/
+example/node_modules
