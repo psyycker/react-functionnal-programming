@@ -33,7 +33,7 @@ Then just use this file as a react component
 //App.js
 import GeneratedComponent from './index.js'
 
-function App() {
+export default function App() {
   return <GeneratedComponent/>
 }
 ```
