@@ -10,7 +10,8 @@
     "react-scripts": "3.3.0"
   },
   "scripts": {
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "release": "np"
   },
   "eslintConfig": {
     "extends": "react-app"
