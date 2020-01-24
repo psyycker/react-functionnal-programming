@@ -27,6 +27,17 @@ import {calculateNewValue} from './Controller';
 export default GenerateComponent(View, {calculateNewValue})
 ```
 
+Then just use this file as a react component
+
+```js
+//App.js
+import GeneratedComponent from './index.js'
+
+function App() {
+  return <GeneratedComponent/>
+}
+```
+
 ## Pros and cons
 
 ### Pros
