@@ -15,6 +15,18 @@ Good question! <br/>
 It makes the code clearer as a function is assigned to a component instead of just using it a reference.
 For people who use typing, the prototype can be set in the props type and you finish with 2 components which as been merged. The first one is  the logic component (functions) and the second one is the view component
 
+### Usage
+
+In your index file, export by default the GenerateComponent function which takes as parameters the View which is a react component and the functions in an object.
+```js
+//index.js
+import GenerateComponent from 'react-functional-programming';
+import View from './View';
+import {calculateNewValue} from './Controller';
+
+export default GenerateComponent(View, {calculateNewValue})
+```
+
 ## Pros and cons
 
 ### Pros
